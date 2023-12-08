@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-3xl font-bold">Hello World</h1>
-    </main>
+    <div>
+      <h1>Start building with our APIs for absolutely free.</h1>
+    </div>
   );
 }

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const plugin = require("tailwindcss/plugin");
 
 const config: Config = {
   content: [
@@ -7,14 +8,22 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
-    plugins: [],
+    // screens: {
+    //   sm: "600px",
+    // },
+
+    extend: {
+      maxWidth: {
+        xxl: "1400px",
+      },
+    },
+
     colors: {
       "main-color": "#edf3f8",
       "shade-grey": "#1b262f",
       "dark-grey": "#36536b",
       "light-grey": "#fbfcfe",
-      white: "#fff",
+      "white-color": "#ffffff",
       pink: "#ba4270",
       error: "#ff0000",
     },

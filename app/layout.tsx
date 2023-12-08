@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display } from "next/font/google";
+import { DM_Serif_Display, Public_Sans } from "next/font/google";
 import "./globals.css";
+
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-const inter = DM_Serif_Display({ subsets: ["latin"], weight: ["400"] });
+const serif = DM_Serif_Display({ subsets: ["latin"], weight: ["400"] });
+const sans = Public_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "PayAPI",
@@ -18,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${serif.className} ${sans.className}`}>
         <Nav />
 
         <main>

@@ -1,5 +1,5 @@
+/** @type {import('tailwindcss').Config} */
 import type { Config } from "tailwindcss";
-const plugin = require("tailwindcss/plugin");
 
 const config: Config = {
   content: [
@@ -8,13 +8,20 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    // screens: {
-    //   sm: "600px",
-    // },
+    fontFamily: {
+      serif: ["DM Serif Display", "serif"],
+    },
 
     extend: {
       maxWidth: {
         xxl: "1400px",
+      },
+
+      screens: {
+        // max-width responsive design
+        // "max-xs": { max: "530px" },
+        xs: "530px",
+        lg: "940px",
       },
     },
 
@@ -23,7 +30,7 @@ const config: Config = {
       "shade-grey": "#1b262f",
       "dark-grey": "#36536b",
       "light-grey": "#fbfcfe",
-      "white-color": "#ffffff",
+      white: "#ffffff",
       pink: "#ba4270",
       error: "#ff0000",
     },

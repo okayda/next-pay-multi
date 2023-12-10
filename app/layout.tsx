@@ -23,9 +23,7 @@ export default function RootLayout({
       <body className={`${serif.className} ${sans.className}`}>
         <Nav />
 
-        <main>
-          <section>{children}</section>
-        </main>
+        <main>{children}</main>
 
         <Footer />
       </body>

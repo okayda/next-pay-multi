@@ -27,7 +27,7 @@ export default function Nav() {
         </div>
 
         <button className="sm:hidden">
-          <Image src="/shared/mobile/menu.svg" width={28} height={17} alt="" />
+          <Image src="/shared/nav/menu.svg" width={28} height={17} alt="" />
         </button>
 
         <Link href="/" className="link-btn hidden sm:block">

@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import CTA from "@/components/CTA";
 
 const serif = DM_Serif_Display({ subsets: ["latin"], weight: ["400"] });
 const sans = Public_Sans({ subsets: ["latin"] });
@@ -25,6 +26,7 @@ export default function RootLayout({
 
         <main>{children}</main>
 
+        <CTA />
         <Footer />
       </body>
     </html>

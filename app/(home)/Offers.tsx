@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Offers() {
   return (
     <section>
-      <div className="mx-auto flex max-w-[640px] flex-col gap-12 px-4 text-center xl:max-w-xxl xl:flex-row xl:gap-6 xl:px-8">
+      <div className="mx-auto flex max-w-[640px] flex-col gap-12 px-4 pb-[110px] text-center lg:pb-[96px] xl:max-w-xxl xl:flex-row xl:gap-6 xl:px-8">
         <div>
           <Image
             src="/home/finance.svg"

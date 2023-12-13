@@ -14,7 +14,7 @@ const config: Config = {
 
     extend: {
       maxWidth: {
-        xxl: "1400px",
+        xxl: "1300px",
       },
 
       screens: {
@@ -29,6 +29,7 @@ const config: Config = {
       "main-color": "#edf3f8",
       "shade-grey": "#1b262f",
       "dark-grey": "#36536b",
+      "slight-grey": "#6c8294",
       "light-grey": "#fbfcfe",
       white: "#ffffff",
       pink: "#ba4270",

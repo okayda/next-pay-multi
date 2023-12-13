@@ -9,7 +9,7 @@
 
   p,
   a:link {
-    @apply text-[15px];
+    @apply text-[15px] lg:text-base;
   }
 }
 
@@ -23,6 +23,6 @@
   }
 
   .link-btn {
-    @apply text-white block rounded-full bg-pink px-6 py-4 text-sm font-bold;
+    @apply block rounded-full bg-pink px-6 py-4 text-sm font-bold text-white;
   }
 }

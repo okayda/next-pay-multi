@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Features() {
   return (
     <section>
-      <div className="mx-auto max-w-[620px] px-8 py-[150px] lg:max-w-xxl">
-        <div className="lg:flex lg:items-center lg:gap-4">
+      <div className="mx-auto max-w-[620px] px-4 pb-[100px] pt-[50px] lg:max-w-xxl lg:px-8 lg:py-[150px]">
+        <div className="lg:flex lg:items-center lg:justify-between lg:gap-4">
           <Image
             src="/home/easy.svg"
             alt="Implementation"
@@ -18,7 +18,7 @@ export default function Features() {
             <h2 className="mb-6 font-serif text-3xl font-bold text-dark-grey xs:text-4xl xs:text-[42px] lg:text-5xl">
               Easy to implement
             </h2>
-            <p className="text-slight-grey">
+            <p className="text-slight-grey lg:text-base">
               Our API comes with just a few lines of code. You’ll be up and
               running in no time. We built our documentation page to integrate
               payments functionality with ease.
@@ -26,7 +26,7 @@ export default function Features() {
           </div>
         </div>
 
-        <div className="lg:flex lg:flex-row-reverse lg:items-center lg:gap-8">
+        <div className="lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:gap-8">
           <Image
             src="/home/simple.svg"
             alt="Implementation"

@@ -22,6 +22,7 @@ const config: Config = {
         // "max-xs": { max: "530px" },
         xs: "530px",
         lg: "940px",
+        xl: "1024px",
       },
     },
 

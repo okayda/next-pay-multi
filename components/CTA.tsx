@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <div className="mx-auto flex max-w-[445px] flex-col px-4 pb-[96px] lg:max-w-xxl lg:flex-row lg:items-center lg:justify-between">
+    <div className="mx-auto flex max-w-[445px] flex-col px-4 pb-[96px] lg:max-w-xxl lg:flex-row lg:items-center lg:justify-between lg:px-8">
       <h2 className="mb-14 text-center font-serif text-5xl font-bold text-dark-grey lg:mb-0">
         Ready to start?
       </h2>

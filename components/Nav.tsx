@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <header className="header">
       <nav className="flex-between">
-        <div className="sm:flex-between sm:items-center sm:gap-6 md:gap-12  ">
+        <div className="sm:flex-between sm:items-center sm:gap-6 md:gap-12">
           <Link href="/">
             <Image
               src="/logo.svg"

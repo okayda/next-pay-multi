@@ -21,6 +21,7 @@ const config: Config = {
         // max-width responsive design
         // "max-xs": { max: "530px" },
         xs: "530px",
+        md: "768px",
         lg: "940px",
         xl: "1024px",
       },

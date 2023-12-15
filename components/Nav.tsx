@@ -17,7 +17,7 @@ export default function Nav() {
             />
           </Link>
 
-          <ul className="sm:flex-between hidden gap-4">
+          <ul className="sm:flex-between hidden gap-6">
             {Navlinks.map((link) => (
               <li key={link.label} className="font-bold text-dark-grey">
                 <Link href={link.route}>{link.label}</Link>

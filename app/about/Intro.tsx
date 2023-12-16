@@ -1,7 +1,7 @@
 export default function Intro() {
   return (
     <section>
-      <div className="mx-auto max-w-xxl px-4 pb-[100px] md:pt-12">
+      <div className="mx-auto max-w-xxl px-4 pb-[100px] md:pt-12 lg:px-8">
         <h2 className="mb-12 max-w-[730px] font-serif text-[32px] font-bold leading-9 text-dark-grey sm:text-5xl">
           We empower innovators by delivering access to the financial system
         </h2>

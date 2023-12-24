@@ -1,3 +1,13 @@
+import FormContact from "./FormContact";
+import Brands from "./Brands";
+
 export default function Page() {
-  return <div>contact</div>;
+  return (
+    <section>
+      <div>
+        <FormContact />
+        <Brands />
+      </div>
+    </section>
+  );
 }

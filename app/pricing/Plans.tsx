@@ -141,7 +141,7 @@ export default function Plans() {
                   {plan.title}
                 </h3>
 
-                <p className="text-slight-grey mb-5 max-w-[350px]">
+                <p className="mb-5 max-w-[350px] text-slight-grey">
                   {plan.description}
                 </p>
 

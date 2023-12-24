@@ -19,7 +19,7 @@ export default function Work() {
           ))}
         </div>
 
-        <div className="text-white flex flex-col gap-8 text-center lg:max-w-[445px] lg:text-left">
+        <div className="flex flex-col gap-8 text-center text-white lg:max-w-[445px] lg:text-left">
           <h2 className="font-serif text-3xl font-bold sm:text-5xl">
             Who we work with
           </h2>
@@ -33,7 +33,7 @@ export default function Work() {
 
           <Link
             href="/about"
-            className="border-white self-center rounded-full border px-8 py-3 lg:self-start"
+            className="self-center rounded-full border border-white px-8 py-3 lg:self-start"
           >
             About Us
           </Link>

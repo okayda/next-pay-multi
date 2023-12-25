@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section>
-      <div className="mx-auto max-w-[490px] px-4 xs:max-w-[550px] lg:flex lg:max-w-xxl lg:flex-row-reverse lg:items-center lg:justify-between lg:px-8">
+      <div className="hero">
         <Image
           src="/home/phone.svg"
           className="mx-auto xs:h-[410px] xs:w-[260px] lg:mx-0 lg:h-[660px] lg:w-[420px]"

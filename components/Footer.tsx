@@ -6,7 +6,7 @@ import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-shade-grey">
+    <footer className="absolute bottom-0 left-0 w-full bg-shade-grey">
       <nav className="mx-auto flex max-w-[445px] flex-col items-center gap-8 px-4 py-8 sm:max-w-xxl sm:flex-row sm:justify-between lg:px-8">
         <div className="flex flex-col gap-7 text-center sm:flex-row sm:items-center sm:gap-10 sm:text-left">
           <Link href="/">

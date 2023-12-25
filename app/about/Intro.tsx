@@ -1,7 +1,7 @@
 export default function Intro() {
   return (
     <section>
-      <div className="mx-auto max-w-xxl px-4 pb-[100px] md:pt-12 lg:px-8">
+      <div className="intro">
         <h2 className="mb-12 max-w-[730px] font-serif text-[32px] font-bold leading-9 text-dark-grey sm:text-5xl">
           We empower innovators by delivering access to the financial system
         </h2>
@@ -12,7 +12,7 @@ export default function Intro() {
               Our Vision
             </h3>
 
-            <p className="text-slight-grey max-w-[635px] text-center sm:text-left">
+            <p className="max-w-[635px] text-center text-slight-grey sm:text-left">
               Our main goal is to build beautiful consumer experiences along
               with developer-friendly infrastructure. The result is an
               intelligent tool that gives everyone the ability to create amazing
@@ -26,7 +26,7 @@ export default function Intro() {
               Our Business
             </h3>
 
-            <p className="text-slight-grey max-w-[635px] text-center sm:text-left">
+            <p className="max-w-[635px] text-center text-slight-grey sm:text-left">
               At the core of our platform is the technical infrastructure APIs
               that connect consumers. Our innovative product provides key
               insights for businesses and individuals, as well as robust

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Features() {
   return (
     <section>
-      <div className="mx-auto max-w-[620px] px-4 pb-[100px] pt-[50px] lg:max-w-xxl lg:px-8 lg:py-[150px]">
+      <div className="features">
         <div className="lg:flex lg:items-center lg:justify-between lg:gap-4">
           <Image
             src="/home/easy.svg"

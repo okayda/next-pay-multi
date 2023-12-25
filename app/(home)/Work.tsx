@@ -4,8 +4,8 @@ import { brands } from "@/constants";
 
 export default function Work() {
   return (
-    <section className="bg-shade-grey px-4 py-[80px]">
-      <div className="mx-auto flex max-w-[480px] flex-col gap-6 lg:max-w-xxl lg:flex-row-reverse lg:justify-between">
+    <section className="work-section">
+      <div className="work">
         <div className="flex flex-wrap items-center justify-center gap-11 lg:max-w-[525px] lg:justify-end lg:gap-x-12 lg:gap-y-0">
           {brands.map((brand) => (
             <Image

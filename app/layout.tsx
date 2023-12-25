@@ -22,12 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${serif.className} ${sans.className}`}>
-        <Nav />
+        <div className="wrapper">
+          <Nav />
 
-        <main>{children}</main>
+          <main>{children}</main>
 
-        <CTA />
-        <Footer />
+          <CTA />
+          <Footer />
+        </div>
       </body>
     </html>
   );

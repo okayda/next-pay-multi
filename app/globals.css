@@ -7,6 +7,10 @@
     @apply bg-main-color;
   }
 
+  .wrapper {
+    @apply relative min-h-screen;
+  }
+
   p,
   a:link {
     @apply text-[15px] leading-7 lg:text-base;
@@ -14,15 +18,48 @@
 }
 
 @layer components {
+  /* Btn style */
+  .link-btn {
+    @apply block rounded-full bg-pink px-6 py-4 text-sm font-bold text-white;
+  }
+
+  /* Navigation */
   .header {
     @apply mx-auto max-w-xxl px-4 py-8 lg:px-8;
   }
 
-  .flex-between {
-    @apply flex justify-between;
+  /* Home page parent div styles */
+  .hero {
+    @apply mx-auto max-w-[490px] px-4 xs:max-w-[550px] lg:flex lg:max-w-xxl lg:flex-row-reverse lg:items-center lg:justify-between lg:px-8;
   }
 
-  .link-btn {
-    @apply block rounded-full bg-pink px-6 py-4 text-sm font-bold text-white;
+  .features {
+    @apply mx-auto max-w-[620px] px-4 pb-[100px] pt-[50px] lg:max-w-xxl lg:px-8 lg:py-[150px];
+  }
+
+  .work-section {
+    @apply bg-shade-grey px-4 py-[80px];
+  }
+
+  .work {
+    @apply mx-auto flex max-w-[480px] flex-col gap-6 lg:max-w-xxl lg:flex-row-reverse lg:justify-between;
+  }
+
+  .offers {
+    @apply mx-auto flex max-w-[640px] flex-col gap-12 px-4 pb-[110px] text-center lg:pb-[96px] xl:max-w-xxl xl:flex-row xl:gap-6 xl:px-8;
+  }
+
+  /* About page parent div styles */
+  .intro {
+    @apply mx-auto max-w-xxl px-4 pb-[100px] md:pt-12 lg:px-8;
+  }
+
+  .outtro {
+    @apply mx-auto max-w-xxl px-4 pb-[100px] lg:px-8;
+  }
+
+  /* Contact page parent div styles */
+  .contact-page {
+    @apply mb-[64px] px-4 md:mx-auto md:mb-[94px] md:max-w-xxl lg:px-8;
   }
 }

@@ -9,7 +9,7 @@ export default function CTA() {
 
       <form
         action="#"
-        className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:gap-0 sm:rounded-full sm:bg-white"
+        className="flex flex-col gap-4 xs:shadow-md sm:flex-row sm:justify-between sm:gap-0 sm:rounded-full sm:bg-white"
       >
         <input
           className="rounded-full p-4 text-sm font-bold shadow-md outline-none sm:w-[240px] sm:shadow-none lg:w-[280px]"
@@ -19,7 +19,7 @@ export default function CTA() {
           placeholder="Enter email address"
         />
 
-        <Button variant="none" size="none" className="link-btn" disabled>
+        <Button variant="none" size="none" className="link-btn text-[15px]">
           Schedule a Demo
         </Button>
       </form>

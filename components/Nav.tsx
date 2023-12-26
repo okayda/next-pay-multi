@@ -119,7 +119,7 @@ export default function Nav() {
           </SheetContent>
         </Sheet>
 
-        <Link href="/" className="link-btn hidden sm:block">
+        <Link href="/" className="link-btn hidden text-[15px] sm:block">
           Schedule a Demo
         </Link>
       </nav>

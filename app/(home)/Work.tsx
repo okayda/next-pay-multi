@@ -41,7 +41,7 @@ export default function Work() {
 
           <Link
             href="/about"
-            className="self-center rounded-full border border-white px-8 py-3 lg:self-start"
+            className="self-center rounded-full border border-white px-8 py-3 text-[15px] font-bold transition-colors hover:bg-white hover:text-shade-grey lg:self-start"
           >
             About Us
           </Link>

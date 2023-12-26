@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 const plans = [
@@ -135,46 +136,53 @@ export default function Plans() {
 
         <div className="flex flex-col gap-12 md:flex-row">
           {plans.map((plan) => (
-            <div key={plan.title}>
-              <div className="mb-6 border-b-2 border-shade-grey/[.15] pb-10 md:border-b">
-                <h3 className="mb-4 font-serif text-2xl font-bold text-pink md:text-[32px]">
-                  {plan.title}
-                </h3>
+            <div className="flex flex-col justify-between" key={plan.title}>
+              <div className="flex h-full flex-col justify-between pb-5 md:text-center lg:text-left">
+                <div className="pb-7">
+                  <h3 className="mb-4 font-serif text-2xl font-bold text-pink md:text-[32px]">
+                    {plan.title}
+                  </h3>
 
-                <p className="mb-5 max-w-[350px] text-slight-grey">
-                  {plan.description}
-                </p>
+                  <p className="max-w-[350px] text-slight-grey">
+                    {plan.description}
+                  </p>
+                </div>
 
                 <span className="block font-serif text-5xl font-bold text-dark-grey">
                   {plan.price}
                 </span>
               </div>
 
-              <div className="mb-6 flex justify-center border-b-2 border-shade-grey/[.15] pb-10 md:border-b">
-                <ul className="flex flex-col gap-1">
-                  {plan.benefits.map((item) => (
-                    <li key={item.name} className="flex items-center gap-6">
-                      {item.valid ? (
-                        <Image
-                          src="/shared/check.svg"
-                          alt=""
-                          className="h-[11px] w-[14px]"
-                          height={11}
-                          width={14}
-                        />
-                      ) : (
-                        <span className="h-[11px] w-[14px]">&nbsp;</span>
-                      )}
+              <div className="border-t-2 border-shade-grey/[.15] md:border-t">
+                <div className="mb-6 flex justify-center border-b-2 border-shade-grey/[.15] py-8 md:justify-start md:border-b">
+                  <ul className="flex flex-col gap-1">
+                    {plan.benefits.map((item) => (
+                      <li key={item.name} className="flex items-center gap-6">
+                        {item.valid ? (
+                          <Image
+                            src="/shared/check.svg"
+                            alt=""
+                            className="h-[11px] w-[14px]"
+                            height={11}
+                            width={14}
+                          />
+                        ) : (
+                          <span className="h-[11px] w-[14px]">&nbsp;</span>
+                        )}
 
-                      <span className="text-dark-grey">{item.name}</span>
-                    </li>
-                  ))}
-                </ul>
+                        <span className="text-dark-grey">{item.name}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <Button
+                  variant="ghost"
+                  className="rounded-full border border-slate-800 p-6 text-[15px] font-bold hover:bg-shade-grey hover:text-white"
+                >
+                  Request Access
+                </Button>
               </div>
-
-              <button className="self-center rounded-full border border-shade-grey px-6 py-3 font-bold">
-                Request Access
-              </button>
             </div>
           ))}
         </div>

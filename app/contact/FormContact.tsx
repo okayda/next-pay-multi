@@ -178,7 +178,8 @@ export default function FormContact() {
 
           <Button
             type="submit"
-            className="rounded-full border border-slate-800 bg-transparent px-10 py-5 text-[15px] font-bold text-black"
+            variant="ghost"
+            className="rounded-full border border-slate-800 px-10 py-5 text-[15px] font-bold transition-colors hover:bg-shade-grey hover:text-white"
           >
             Submit
           </Button>

@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -29,12 +30,18 @@ export default function Hero() {
               id="email"
               placeholder="Enter email address"
             />
-            <button className="link-btn">Schedule a Demo</button>
+
+            <Button variant="none" size="none" className="link-btn text-[15px]">
+              Schedule a Demo
+            </Button>
           </form>
 
-          <p className="text-center text-[#6c8294] lg:pl-4 lg:text-left">
-            Have any questions?{" "}
-            <Link href="/contact" className="font-bold">
+          <p className="flex justify-center gap-2 text-[#6c8294] lg:justify-start lg:pl-4">
+            Have any questions?
+            <Link
+              href="/contact"
+              className="border-[#6c8294] font-bold hover:border-b"
+            >
               Contact Us
             </Link>
           </p>

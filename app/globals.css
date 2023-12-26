@@ -15,8 +15,7 @@
     @apply overflow-x-hidden;
   }
 
-  p,
-  a:link {
+  p {
     @apply text-[15px] leading-7 lg:text-base;
   }
 }

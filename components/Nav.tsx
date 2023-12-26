@@ -1,11 +1,23 @@
 "use client";
 
+import { twMerge } from "tailwind-merge";
+import { Navlinks } from "../constants/index";
+
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Navlinks } from "../constants/index";
-import { twMerge } from "tailwind-merge";
+
+import { FaTimes } from "react-icons/fa";
 import { Button } from "./ui/button";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
 
 export default function Nav() {
   const pathname = usePathname();
@@ -32,6 +44,7 @@ export default function Nav() {
             />
           </Link>
 
+          {/* Desktop navigation */}
           <ul className="hidden gap-6 sm:flex sm:justify-between">
             {Navlinks.map((link) => {
               const isActive =
@@ -47,16 +60,64 @@ export default function Nav() {
                     }`,
                   )}
                 >
-                  <Link href={link.route}>{link.label}</Link>
+                  <Link className="text-[15px] lg:text-base" href={link.route}>
+                    {link.label}
+                  </Link>
                 </li>
               );
             })}
           </ul>
         </div>
 
-        <Button variant="none" size="none" className="sm:hidden">
-          <Image src="/shared/nav/menu.svg" width={28} height={17} alt="" />
-        </Button>
+        {/* Right side navigation only for mobile */}
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button variant="none" size="none" className="sm:hidden">
+              <Image src="/shared/nav/menu.svg" width={28} height={17} alt="" />
+            </Button>
+          </SheetTrigger>
+
+          <SheetContent className="border-none bg-[#1c2731]">
+            <SheetHeader className="flex flex-col gap-16">
+              <SheetTitle className="self-end">
+                <SheetClose asChild>
+                  <FaTimes className="h-[30px] w-[20px] text-white" />
+                </SheetClose>
+              </SheetTitle>
+
+              <ul className="flex flex-col gap-6 text-center">
+                {Navlinks.map((link) => {
+                  const isActive =
+                    (pathname.includes(link.route) && link.route.length > 1) ||
+                    pathname === link.route;
+
+                  return (
+                    <li
+                      key={link.label}
+                      className={`font-bold ${twMerge(
+                        ` text-light-grey/70 ${isActive && "text-white"}`,
+                      )}`}
+                    >
+                      <SheetClose asChild>
+                        <Link className="text-[20px]" href={link.route}>
+                          {link.label}
+                        </Link>
+                      </SheetClose>
+                    </li>
+                  );
+                })}
+
+                <li className="self-center">
+                  <SheetClose asChild>
+                    <Link href="/" className="link-btn mt-4">
+                      Schedule a Demo
+                    </Link>
+                  </SheetClose>
+                </li>
+              </ul>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
 
         <Link href="/" className="link-btn hidden sm:block">
           Schedule a Demo

@@ -1,12 +1,14 @@
 "use client";
 
+import { twMerge } from "tailwind-merge";
+import { Navlinks } from "../constants/index";
+
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Navlinks } from "../constants/index";
+
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
-import { twMerge } from "tailwind-merge";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -47,7 +49,12 @@ export default function Footer() {
                       `font-bold text-white/70 ${isActive && "text-white"}`,
                     )}
                   >
-                    <Link href={link.route}>{link.label}</Link>
+                    <Link
+                      className="text-[15px] lg:text-base"
+                      href={link.route}
+                    >
+                      {link.label}
+                    </Link>
                   </li>
                 );
               })}

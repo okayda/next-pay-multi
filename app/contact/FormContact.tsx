@@ -36,7 +36,6 @@ const formSchema = z.object({
 });
 
 export default function FormContact() {
-  // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -49,10 +48,8 @@ export default function FormContact() {
     },
   });
 
-  // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
-    // ✅ This will be type-safe and validated.
     console.log(values);
   }
 
@@ -70,7 +67,7 @@ export default function FormContact() {
                     placeholder="Name"
                     type="text"
                     {...field}
-                    className="border-trans-grey border-b bg-transparent"
+                    className="border-b border-trans-grey bg-transparent"
                   />
                 </FormControl>
 
@@ -89,7 +86,7 @@ export default function FormContact() {
                     placeholder="Email Address"
                     type="email"
                     {...field}
-                    className="border-trans-grey border-b bg-transparent"
+                    className="border-b border-trans-grey bg-transparent"
                   />
                 </FormControl>
 
@@ -108,7 +105,7 @@ export default function FormContact() {
                     placeholder="Company Name"
                     type="text"
                     {...field}
-                    className="border-trans-grey border-b bg-transparent"
+                    className="border-b border-trans-grey bg-transparent"
                   />
                 </FormControl>
 
@@ -127,7 +124,7 @@ export default function FormContact() {
                     placeholder="Title"
                     type="text"
                     {...field}
-                    className="border-trans-grey border-b bg-transparent"
+                    className="border-b border-trans-grey bg-transparent"
                   />
                 </FormControl>
 
@@ -145,7 +142,7 @@ export default function FormContact() {
                   <Textarea
                     placeholder="Message"
                     {...field}
-                    className="border-trans-grey border-b bg-transparent"
+                    className="border-b border-trans-grey bg-transparent"
                   />
                 </FormControl>
 
@@ -163,7 +160,7 @@ export default function FormContact() {
                   <Checkbox
                     checked={field.value}
                     onCheckedChange={field.onChange}
-                    className="h-[24px] w-[24px]"
+                    className="h-[20px] w-[20px]"
                   />
                 </FormControl>
 

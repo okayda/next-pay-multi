@@ -5,14 +5,21 @@ import Link from "next/link";
 import Image from "next/image";
 import { Navlinks } from "../constants/index";
 import { twMerge } from "tailwind-merge";
+import { Button } from "./ui/button";
 
 export default function Nav() {
   const pathname = usePathname();
 
-  console.log(pathname);
-
   return (
-    <header className="header">
+    <header className="header relative">
+      <Image
+        src="/shared/circle.svg"
+        width={100}
+        height={100}
+        className="absolute left-1/2 top-[-180px] -z-10 w-full max-w-[715px] -translate-x-1/2 transform xs:top-[-240px] sm:top-[-380px] md:max-w-[780px] lg:left-auto lg:right-0 lg:-translate-x-0"
+        alt=""
+      />
+
       <nav className="flex justify-between">
         <div className="sm:flex sm:items-center sm:justify-between sm:gap-6 md:gap-12">
           <Link href="/">
@@ -47,9 +54,9 @@ export default function Nav() {
           </ul>
         </div>
 
-        <button className="sm:hidden">
+        <Button variant="none" size="none" className="sm:hidden">
           <Image src="/shared/nav/menu.svg" width={28} height={17} alt="" />
-        </button>
+        </Button>
 
         <Link href="/" className="link-btn hidden sm:block">
           Schedule a Demo

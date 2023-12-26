@@ -11,6 +11,10 @@
     @apply relative min-h-screen;
   }
 
+  main {
+    @apply overflow-x-hidden;
+  }
+
   p,
   a:link {
     @apply text-[15px] leading-7 lg:text-base;
@@ -30,7 +34,7 @@
 
   /* Home page parent div styles */
   .hero {
-    @apply mx-auto max-w-[490px] px-4 xs:max-w-[550px] lg:flex lg:max-w-xxl lg:flex-row-reverse lg:items-center lg:justify-between lg:px-8;
+    @apply mx-auto max-w-[490px] px-4 pb-[80px] xs:max-w-[550px] lg:flex lg:max-w-xxl lg:flex-row-reverse lg:items-center lg:justify-between lg:px-8 lg:pb-0;
   }
 
   .features {

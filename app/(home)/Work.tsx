@@ -4,8 +4,16 @@ import { brands } from "@/constants";
 
 export default function Work() {
   return (
-    <section className="work-section">
-      <div className="work">
+    <section className="work-section relative overflow-hidden">
+      <Image
+        src="/shared/circle.svg"
+        width={100}
+        height={100}
+        className="absolute left-1/2 top-[-180px] w-full max-w-[715px] -translate-x-1/2 transform xs:top-[-240px] sm:top-[-380px] md:max-w-[780px] lg:left-0 lg:-translate-x-0"
+        alt=""
+      />
+
+      <div className="work relative z-10">
         <div className="flex flex-wrap items-center justify-center gap-11 lg:max-w-[525px] lg:justify-end lg:gap-x-12 lg:gap-y-0">
           {brands.map((brand) => (
             <Image

@@ -1,10 +1,17 @@
-import Link from "next/link";
 import Image from "next/image";
 
 export default function Features() {
   return (
     <section>
-      <div className="features">
+      <div className="features relative">
+        <Image
+          src="/shared/circle.svg"
+          width={100}
+          height={100}
+          className="absolute right-[-50%] top-[60%] hidden w-full max-w-[780px] -translate-y-1/2 transform lg:block"
+          alt=""
+        />
+
         <div className="lg:flex lg:items-center lg:justify-between lg:gap-4">
           <Image
             src="/home/easy.svg"

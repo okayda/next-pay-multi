@@ -1,3 +1,5 @@
+import { Button } from "./ui/button";
+
 export default function CTA() {
   return (
     <div className="mx-auto flex max-w-[445px] flex-col px-4 pb-[476px] sm:pb-[192px] lg:max-w-xxl lg:flex-row lg:items-center lg:justify-between lg:px-8">
@@ -16,7 +18,10 @@ export default function CTA() {
           id="email"
           placeholder="Enter email address"
         />
-        <button className="link-btn">Schedule a Demo</button>
+
+        <Button variant="none" size="none" className="link-btn" disabled>
+          Schedule a Demo
+        </Button>
       </form>
     </div>
   );

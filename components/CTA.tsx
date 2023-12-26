@@ -17,6 +17,7 @@ export default function CTA() {
           name="email"
           id="email"
           placeholder="Enter email address"
+          required
         />
 
         <Button variant="none" size="none" className="link-btn text-[15px]">
